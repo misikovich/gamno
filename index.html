@@ -492,11 +492,7 @@
         //geminis response: 
         //i love you too  
         let id = await getRandomVideoId();
-        let isEmbeddable = await isVideoEmbeddable(id);
-        console.log(isEmbeddable);
-        if (!isEmbeddable) {
-          alert("Это видео можно посмотреть только на youtube.com, здесь гамно");
-        }
+
         yt.src = `https://www.youtube.com/embed/${id}?autoplay=1`;
         ov.style.display = "flex";
       };
